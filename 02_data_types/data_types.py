@@ -11,3 +11,5 @@ print(type(b))
 print(type(c))
 print(type(is_bool))
 print(type(d))
+
+#data type like list, tuple , dict, set will discuss in data structure topic
