@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25c68aa7-a18e-4f20-9152-16330c2b4ab9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/02_data_types/Practice1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02_data_types/data_types.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/02_data_types/Number_System_Conversion.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_data_types/data_types.py" beforeDir="false" afterPath="$PROJECT_DIR$/02_data_types/data_types.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,9 +24,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="3HVBwK5g4om5vL8ouRECfcflBcI" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -35,6 +35,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.Number_System_Conversion.executor": "Run",
     "Python.Practice1.executor": "Run",
     "Python.data_types.executor": "Run",
     "Python.main.executor": "Run",

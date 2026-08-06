@@ -18,3 +18,4 @@ print(int(c))
 #Q4
 d = 25
 print(str(d))
+print(id(d))   # It will print memory address
