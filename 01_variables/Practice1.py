@@ -37,3 +37,7 @@ b= 5
 a , b = b, a
 print(a,b)
 
+num1= int(input("Enter a number:"))
+num2= int(input("Enter 2nd number:"))
+num1, num2= num2, num1
+print(f'Num1 is:- {num1} and Num2 is:- {num2}')
