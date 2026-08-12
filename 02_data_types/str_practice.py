@@ -35,7 +35,7 @@ print(st[-len(st)])
 # print(st[6]) IndexError
 
 #SLICING
-
+                                             #Syntax 1
 # CASE 1. +ve BEGIN: +ve END
 st1 = "PYTHON"
 print(st1[1:4])
@@ -58,3 +58,52 @@ print(st1[-3:5])
 print(st1[-4:4])
 print(st1[-6:6])
 
+                                                      #SYNTAX 2
+
+#strObj[BEGIN: ]
+s= "PYTHON"
+print(s[2:])
+print(s[0:])
+print(s[0:1000])
+print(s[-2:])
+print(s[-5:])
+print(s[-1000:])
+
+                                             #Syntax 3
+
+#strObj[ :END]
+print(s[: 4])
+print(s[:100])
+print(s[:-2])
+print(s[: -4])
+
+                                            #Syntax 4
+
+#strObj[:]
+print(s[:])
+addr= "Hyderabad"
+print(addr[:])
+
+                                            #Syntax 5
+#strObj[BEGIN:END:STEP]
+
+#Rule 1. +ve BEGIN: +ve END : +ve STEP
+print(s[1:6:1])
+print(s[0:5:2])
+print(s[1:6:1])
+print(s[0:6:4])
+
+#Rule 2. -ve BEGIN: -ve END : +ve STEP
+print(s[-6:-1:1])
+print(s[-5:-2:2])
+print(s[-2:-4:3])  #Empty/Space
+
+#Rule 3. +ve BEGIN: -ve END : +ve STEP
+print(s[1:-1:2])
+print(s[2:-2:2])
+print(s[3:-3:3])   #Empty/Space
+
+#Rule 4. -ve BEGIN: +ve END : +ve STEP
+print(s[-6:6:1])
+print(s[-5:5:3])
+print(s[-100:100:4])
