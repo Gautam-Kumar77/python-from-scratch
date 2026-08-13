@@ -217,6 +217,7 @@
 # m1= input("Enter 1st Name: ")
 # m2= int(input("Enter marks: "))
 # marks.update({m1:m2})
+from nturl2path import pathname2url
 
 # m2= input("Enter 2nd Name: ")
 # m3= int(input("Enter marks: "))
@@ -301,14 +302,86 @@
 # sw.add("12")
 # print(len(sw))
 
-students= { }
-name= input("Enter Your Name: ")
-lan= input("Enter Your Fav Lang: ")
-students.update({name:lan})
-name1= input("Enter Your Name: ")
-lan1= input("Enter Your Fav Lang: ")
-students.update({name1:lan1})
-name2= input("Enter Your Name: ")
-lan2= input("Enter Your Fav Lang: ")
-students.update({name2:lan2})
-print(students)
+
+# students= { }
+# name= input("Enter Your Name: ")
+# lan= input("Enter Your Fav Lang: ")
+# students.update({name:lan})
+# name1= input("Enter Your Name: ")
+# lan1= input("Enter Your Fav Lang: ")
+# students.update({name1:lan1})
+# name2= input("Enter Your Name: ")
+# lan2= input("Enter Your Fav Lang: ")
+# students.update({name2:lan2})
+# print(students)
+
+                                        #Conditional Expression
+# age= int(input("Enter Your Age:- "))
+#
+# if age>0 and age<=17:
+#     print("You are teenager")
+# elif age>=18 and age<60:
+#     print("You are eligible to give vote ")
+# elif age<0:
+#     print("Bencho sahi age daal")
+# else:
+#     print("You are not eligible to give vote ")
+# print("Program Terminated")
+
+#WAP to find greatest of four numbers entered by user
+# n1= int(input("Enter first number"))
+# n2= int(input("Enter 2nd number"))
+# n3= int(input("Enter 3rd number"))
+# n4= int(input("Enter 4th number"))
+#
+# if n1>n2:
+#     print(f"{n1} is greatest number:")
+# elif n2>n3 and n2>n1:
+#     print(f"{n2} is greatest number:")
+# elif n3>n4 and n3>n2:
+#     print(f"{n3} is greatest number:")
+# else:
+#     print(f"{n4} is greatest number:")
+
+# sub1= int(input("Enter marks of English: "))
+# sub2= int(input("Enter marks of Sanskrit: "))
+# sub3= int(input("Enter marks of Computer: "))
+#
+# total= ((sub1+sub2+sub3)/300)*100
+#
+# if total>=40 and sub1>33 and sub2>33 and sub3>33:
+#     print("Pass")
+# else:
+#     print("You are fail")
+
+# p1= "Make a money"
+# p2= "Buy new"
+# p3="Subscribe this"
+# p4="click this"
+#
+# message= input("Enter Your Comment: ")
+# if (p1 in message) or (p2 in message) or (p3 in message) or (p4 in message):
+#     print("This is Spam")
+# else:
+#     print("Nothing")
+#
+# n= input("Enter a number")
+# if len(n)<10:
+#     print("It contains less than 10 characters")
+#
+# else:
+#     print("It contains more than 10 characters")
+
+# l= ["Sourabh", "ram", "shyam"]
+#
+# t = input("Enter name to find: ")
+# if t in l:
+#     print("Name is present in list")
+# else:
+#     print("Name is not present in list")
+
+s = "Harry is a good boy"
+if "Harry" in s:
+    print("Yes it is there")
+else:
+    print("Not there")
