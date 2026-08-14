@@ -380,8 +380,74 @@ from nturl2path import pathname2url
 # else:
 #     print("Name is not present in list")
 
-s = "Harry is a good boy"
-if "Harry" in s:
-    print("Yes it is there")
+# s = "Harry is a good boy"
+# if "Harry" in s:
+#     print("Yes it is there")
+# else:
+#     print("Not there")
+
+# num= int(input("Enter a Number: "))
+# if num>=0:
+#     print(f"{num} is positive number: ")
+# else:
+#     print("It is negative Number")
+
+# num= int(input("Enter a Number: "))
+#
+# if num%5==0:
+#     print(f"{num} is divisible by 5")
+# else:
+#     print("Not divisible")
+
+#
+# Even or Odd
+# Take a number and print whether it is even or odd.
+# Positive or Negative
+# Take a number and print whether it is positive or negative.
+# Pass or Fail
+# Take marks as input. If marks are 40 or above, print "Pass", otherwise "Fail".
+# Greater Number
+# Take two numbers and print which one is greater.
+# Password Check
+# Take a password from the user. If it matches "python123", print "Login Successful", otherwise print "Wrong Password".
+
+
+# n= input("Enter a password:")
+# if ("python123" == n):
+#     print("Login Successful")
+# else:
+#     print("Password is wrong")
+
+
+# username= input("Enter a Username: ")
+# correct_username= "Admin"
+# pas= input("Enter a Password: ")
+# correct_password= 1234
+# if username == correct_username and pas==correct_password:
+#     print("Login Successful")
+#
+# else:
+#     print("Appropriate error message: ")
+
+
+# account_balance= int(input("Enter your Account Balance: "))
+# withdrawl_amt= int(input("How much amount you want to Withdrawl:"))
+# if withdrawl_amt <= account_balance:
+#     print("You can withdrawl amount")
+# else:
+#     print("Insufficient Amount")
+
+# Admission Eligibility
+# Ask for:
+# Age
+# Marks
+# Student is eligible if age is at least 18 and marks are at least 60.
+
+age= int(input("Enter Your Age: "))
+marks= int(input("Enter Your Marks: "))
+
+if age>= 18 and marks>60:
+    print("You are eligible for admission")
 else:
-    print("Not there")
+    print("Sorry You are not eligible")
+
