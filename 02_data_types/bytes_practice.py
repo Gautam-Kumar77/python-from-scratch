@@ -8,7 +8,7 @@ a[1]=24
 print(a)
 print(b)
 
-b[2]=25;
-print(b)  #TypeError: 'bytes' object does not support item assignment
+# b[2]=25;
+# print(b)  #TypeError: 'bytes' object does not support item assignment
 
 # bytes is a immutable
