@@ -23,4 +23,4 @@ print(z1.imag , type(z1))
 z2 = 3j
 print(z2.real)
 print(z2.imag)
-print(z2.imaginary)
+print(z2.imaginary) 
