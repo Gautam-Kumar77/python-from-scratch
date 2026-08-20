@@ -59,7 +59,7 @@
 # for i in range(-9, 0, 1):
 #     print(i)                      # it will print reverse
 
-# for i in range(-1, -10):
-#     print(i)               #No Output
+for i in range(-1, -20):
+    print(i)               #No Output
 
 
