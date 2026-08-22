@@ -1,4 +1,4 @@
-                                             #LIST
+from pygments.lexers.sql import re_error  #LIST
 
 lst= [34,8,3.46,"PYTHON", True]
 print(lst, type(lst), id(lst))
@@ -63,6 +63,8 @@ print(lst4, type(lst4), id(lst4))
 lst4= [34,8+2j,3.46,"PYTHON", True]
 lst4.extend([101,102])
 print(lst4)
+#NOTE: Alternatively, we can Use an Operater + for Concatinating of Two OR More List Object and Conatinating Results
+#placed in New List with Different Memory Address.
 
 #3 insert()  used to add the value at the specified index
 lst4= [34,8+2j,3.46,"PYTHON", True]
@@ -102,4 +104,130 @@ print(l)
 l= [10,20,10,10,20,30,30,10,20]
 l.clear()
 print(l)
+
+
+
+# NOTE:-                                  #del Operator
+
+lstt= [45,23,78,222,"Python", True]
+del lstt[3]
+print(lstt)
+
+lstt= [67,23,21,355,"Hello"]
+del lstt[1:3:1]
+print(lstt)
+
+lstt= [3848,45,24,2.66, 6.4, False]
+del lstt
+
+
+#7. index()   used to find first occurence of specified value
+l1= [20,22,20, False, 45,76,34.21,3+9j, "Hii", False]
+print(l1.index(76))
+print(l1.index(0))
+print(l1.index(False))
+
+
+                                            #enumerate()
+
+#used for finding indexes and corresponding values of any iterable object
+#NOTE
+l2= [10, 20, 30,10, 20,10,30,40]
+for index, value in enumerate(l2):
+    print(index, "---->", value)
+
+for index, value in enumerate(l2):
+    if value==10:
+        print(index,"---->", value)
+
+# l1= 123
+# for i in enumerate(l1):  #TypeError: 'int' object is not iterable
+#     print(l1)
+
+#8. count()  used to count the number of occurences of specified values
+
+l2= [10, 20, 30,10, 20,10,30,40]
+print(l2.count(10))
+print(l2.count(100))   # it will return 0 bcoz 100 is not in the list
+#NOTE
+# print(list("1234123467").count(1))   # it will return 0 bcoz 1 is not in the list, Here "1234123467" is str
+print(list("12341234267").count("2"))
+print(['12341234267'].count("123"))     #0
+# print(list["12341234267"].count("123"))  #TypeError: descriptor 'count' for 'list' objects doesn't apply to a 'str' object
+print((["12341234267"])[0].count("123"))
+
+#9 copy()          Return a shallow copy of the list.
+#1. Shallow Copy       2. Deep Copy
+
+#1. Shallow Copy
+lst1= [10,20,30]
+lst2=  lst1.copy()
+print(lst1, id(lst1))
+print(lst2, id(lst2 ))
+
+lst1.append(40)
+lst2.insert(3, 50)
+print(lst1, id(lst1))
+print(lst2, id(lst2 ))
+
+#2. Deep Copy
+
+ls1= [23,44,33,22]
+lst2=lst1
+print(lst1, id(lst1))
+print(lst2, id(lst2 ))
+
+lst1.append(100)
+print(lst1, id(lst1))
+print(lst2, id(lst2 ))
+
+#10.. reverse() it is used to reverse elements in such a way that back elements comes to front and front goes to back
+l3= [23,2,6,565,True, 1.0, 2+4j, False]
+l2= l3.reverse()
+print(l3)
+print(l3[::-1])
+
+#11. sort()
+# Syntax-1:		ListObj.sort()----------------------->Sorts the Data in Ascending Order
+# Syntax-2:		ListObj.sort(reverse=False)----->Sorts the Data in Ascending Order
+# Syntax-3:		ListObj.sort(reverse=True)------>Sorts the Data in Descending Order
+
+l4 = [23,4,56,13,7,2,1,99,568]
+l5=l4.sort()
+print(l4)
+
+l51= l4.sort(reverse= True) # It will print the value in descending order
+print(l4)
+
+# l6= [23,"Tree", 4.3, True]
+# l52= l6.sort()
+# print(l6)  #TypeError: '<' not supported between instances of 'str' and 'int'
+
+
+                               #NESTED LIST OR INNER LIST
+
+print("Matrix")
+nested= [23, "Matrix", [23,34,56], [83,45], 344, 3.23, True]
+print(nested)
+
+print(nested[2][1])
+print(nested[-5][-2])
+
+for index, value in enumerate(nested):
+    print(index, '--->', value)
+
+
+mat= [[10,20,30], [40,50,60], [70,80,90]]
+for i in mat:
+    print(i)
+
+mat3d= [[[10,20, 30], [40,50,60]] , [[70,80,90], [100,110,120]]]
+for top in mat3d:
+    for row in top:
+        print(row)
+
+print(len(mat3d))
+print(mat3d[1][1][0])
+mat3d[1][0][1]=800
+print(mat3d)
 
