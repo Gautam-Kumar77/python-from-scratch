@@ -229,5 +229,7 @@ for top in mat3d:
 print(len(mat3d))
 print(mat3d[1][1][0])
 mat3d[1][0][1]=800
+
+mat3d[0][1][2]=70
 print(mat3d)
 
