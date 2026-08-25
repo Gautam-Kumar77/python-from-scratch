@@ -116,3 +116,47 @@ print(t)
 tp= sorted(g, reverse= False)
 print(tp)
 
+# ----------------------------------------------------------------
+# Nested of Inner tuple
+# ----------------------------------------------------------------
+
+# tuple in tuple
+t= (2,4,3,(23,45,21), (34,21,43) )
+
+print(t[2])
+print(t.index(2))
+print(t[4].index(43))
+print(t[4][2])
+
+for val in t:
+    print(val, type(val), type(t))
+
+print(max(t[3]))
+print(min(t[4]))
+# print(max(t))
+
+t1= ((10,20,30),(40,50,60), (70,80,80))
+for val in t1:
+    print(val)
+
+# list in tuple
+tup = (10,20, [1,3,2,7], 87.3, [2,5,9,1], False)
+print(tup[1])
+print(tup[4][3])
+a=tup[4].append(33)
+b= tup[2].insert(0, 0)
+c= tup[4].sort()
+
+print(tup)
+d= tup[4].sort(reverse=True)
+print(tup)
+
+#tuple in list
+lst= [23,4,(7,9,6), 33.3, (23,67,3)]
+print(lst, type(lst))
+lst[0]= 2
+print(lst)
+
+print(lst[2][0:2])
+t= tuple(sorted(lst[2]))
+print(t)
