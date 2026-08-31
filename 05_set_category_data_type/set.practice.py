@@ -137,4 +137,69 @@ s= "Python"
 s1= "java"
 print(set(s).union(set(s1)))
 
-#intersection()
+#11 intersection()
+
+s1= {10,20,30,40}
+s2= { 30,40,50,60}
+s3= s1.intersection(s2)
+print(s3)
+
+s4= {20,30,60}.intersection({20,40,50})
+print(s4)
+
+lst= [10,20,30,40]
+lst1= [30,40,50,60]
+
+# s1= lst.intersection(lst1)
+# print(s1)   AttributeError: 'list' object has no attribute 'intersection'
+s= set(lst).intersection((set(lst1)))
+print(s, type(s))
+
+#12 difference()
+s1= {10,20,30,40}
+s2= { 30,40,50,60}
+diff= s1.difference(s2)
+diff1= s2.difference(s1)
+
+print(diff)
+print(diff1)
+
+#13 symmetric_difference()
+s1= {10,20,30,40}
+s2= { 30,40,50,60}
+sdiff= s1.symmetric_difference(s2)
+print(sdiff)
+
+s1diff= {1,2,3}.symmetric_difference({8,9,0})
+print(s1diff)
+
+s2diff= {1,2,3}.symmetric_difference({1,2,3})
+print(s2diff)
+
+#14 update()      used for adding or merging the content of s2 with s1 itself
+s1= {10,20,30,40}
+s2= {10,20,30,60}
+s3= s1.update(s2)
+print(s1)
+print(s3)  #None
+
+#15  difference_update()
+s1= {10,20,30,40}
+s2= {30,40,50,60}
+s3= s1.difference_update(s2)
+print(s1)
+
+s4= s2.difference_update(s1)
+print(s2)
+
+#16 intersection_update()
+s1= {10,20,30,40}
+s2= {30,40,50,60}
+inup= s1.intersection_update(s2)
+print(s1)
+
+#17 symmetric_difference_update()
+s1= {10,20,30,40}
+s2= {30,40,50,60}
+sdu= s1.symmetric_difference_update(s2)
+print(s1)
