@@ -203,3 +203,33 @@ s1= {10,20,30,40}
 s2= {30,40,50,60}
 sdu= s1.symmetric_difference_update(s2)
 print(s1)
+
+
+  #Combination of set with set, list , tuple
+
+#CASE 1: set in set  :NOT POSSIBLE
+# s= {23,5,24,{3,5,8}, {4,9,0,1}, "Hello"}
+# print(s, type(s))
+
+#CASE 2: list in set   :NOT POSSIBLE
+# s= {23,5,24,[3,5,8], [4,9,0,10], "Hello"}
+# print(s, type(s))
+
+#CASE 3: tuple in set   :POSSIBLE bcoz tuples are immutable
+s= {23,5,24,(3,5,8), (4,9,0,1), "Hello"}
+for i in s:
+    print(i, type(i), type(s))
+
+#CASE 4: set in list
+lst= [34,6,{8,6,4}, 78, "PYTHON",{2,4,1}]
+lst[2]=43
+print(lst,type(lst))
+for i in lst:
+    print(i, type(i))
+
+#CASE 5: set in tuple
+tpl= (32,45,3,{55,8,33}, 9.8)
+tpl[3].discard(8)
+tpl[3].add(1200)
+for i in tpl:
+    print(i)
