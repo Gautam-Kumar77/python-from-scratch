@@ -34,7 +34,7 @@ ls= lst[2].add(100)
 ls1= lst[3].discard(89)
 print(lst)
 
-#. dict in list
+#4. dict in list
 lst= [56,76,{"Course": "MCA", "Roll" :34}, 23]
 print(lst, type(lst))
 
