@@ -34,7 +34,7 @@ print()
 st1= lst[-1].add(20)
 print(lst)
 
-#dict in tuple
+#4. dict in tuple
 tpl= (34,45,{3:10, 2:20,1:10}, False, {"a":12, "b":23})
 print(tpl)
 print(tpl[4])
