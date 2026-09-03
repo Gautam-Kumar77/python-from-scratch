@@ -443,11 +443,60 @@ from nturl2path import pathname2url
 # Marks
 # Student is eligible if age is at least 18 and marks are at least 60.
 
-age= int(input("Enter Your Age: "))
-marks= int(input("Enter Your Marks: "))
+# age= int(input("Enter Your Age: "))
+# marks= int(input("Enter Your Marks: "))
+#
+# if age>= 18 and marks>60:
+#     print("You are eligible for admission")
+# else:
+#     print("Sorry You are not eligible")
 
-if age>= 18 and marks>60:
-    print("You are eligible for admission")
-else:
-    print("Sorry You are not eligible")
+            #Displaying the result of python program on the console
 
+#Syntax 1
+a= 10
+b= 20
+c= 30
+print(a,b,c)
+
+#Syntax 2
+print("Hello Python World!")
+print("Hello", "Python", "World")
+print("Hello"+"Python"+"World")
+print(str("Hello")+ " "+ str("Python")+ " "+ str("World"))
+
+#Syntax 3.
+a= 10
+b= 20
+print("The value of a = ", a)
+print("The value of a = "+ str(a))
+print("sum of", a, "and", b , 'is', a+b )
+
+#Syntax 4.
+a=10
+print("The value of a= {} ".format(a))
+
+b= 20
+c= a+b
+print("Sum of {} and {} is= {}".format(a,b,c))
+
+#Syntax 5.
+a=10
+b=50
+c=a+b
+print(f"Value of a is: {a}")
+print(f"Sum of {a} and {b} is: {c}")
+
+#Syntax 6.
+a=100
+print("Value is %d" %a)
+
+sno= 12
+sname= "Rossum"
+marks= 23.45
+print("My roll no is %d , My name is %s and my marks is %0.2f"%(sno, sname, marks))
+
+#Syntax 7.
+r= range(10, 50)
+for v in r[::5]:
+    print(v)
