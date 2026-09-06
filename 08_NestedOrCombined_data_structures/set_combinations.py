@@ -12,14 +12,14 @@
 
 
 # CASE 3: tuple in set :POSSIBLE, because tuple is immutable
-st2= {12,5,6,(90,100,70), 89}
+st2= {12,5,6,(90,100,70), 89}       
 print(st2)
 
 for i in st2:
     print(i)
 
-# CASE 4: dict in set  :NOT Possible, bcoz dict is mutable and dict can can contain immutable object
+
+# CASE 4: dict in set  :NOT Possible, because dict is mutable and dict can can contain immutable object
 std= {23,4, {'md':23, 'rs': 67, 8:23}, "Python", 89}
-print(std)
 
 
