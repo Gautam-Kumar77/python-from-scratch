@@ -500,3 +500,6 @@ print("My roll no is %d , My name is %s and my marks is %0.2f"%(sno, sname, mark
 r= range(10, 50)
 for v in r[::5]:
     print(v)
+
+
+
