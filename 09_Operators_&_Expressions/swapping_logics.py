@@ -25,4 +25,14 @@ b=3
 a= a+b
 b= a-b
 a= a-b
+print("="*40)
+print("Value of a= {} \nValue of b= {} " .format(a,b))
+
+#Method 4
+a=5
+b=6
+a=a*b
+b= a//b
+a= a//b
+print("="*40)
 print("Value of a= {} \nValue of b= {} " .format(a,b))
