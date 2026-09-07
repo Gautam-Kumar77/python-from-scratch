@@ -1,4 +1,4 @@
-from django.urls import reverse  #List Combinations with list,tuple,set,dict
+                      #List Combinations with list,tuple,set,dict
 
 #1. list in list: POSSIBLE
 lst= [23,45,"PYTHON", [2,5,1,9], 3.5]
