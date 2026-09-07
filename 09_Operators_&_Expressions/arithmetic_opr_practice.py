@@ -1,0 +1,10 @@
+a= float(input("Enter first number: "))
+b= float(input("Enter second number: "))
+
+print("Sum: {} + {} = {}".format(a,b,a+b))
+print("Subtraction: {} - {} = {}".format(a,b,a-b))
+print("Multiplication: {} * {} = {}".format(a,b,a*b))
+print("Division: {} / {} = {}".format(a,b,a/b))
+print("Floor Division: {} // {} = {}".format(a,b,a//b))
+print("Remainder: {} % {} = {}".format(a,b,a%b))
+print("Exponential: {} ** {} = {}".format(a,b,a**b))
