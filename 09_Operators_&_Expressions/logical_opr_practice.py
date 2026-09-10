@@ -43,3 +43,15 @@ print(0 or 100)
 print(0 or 200 or 900)
 print("Java" or "Python")
 print("Java" or "Python" or " ")
+
+                                        #not operator
+
+#eg1
+print(not(True))
+print(not(False))
+print(not(10>20 and 90>10))
+
+#eg2
+print(bool(10))
+print(not(bool(10)))
+print(100 and not 300 or not 500)  #False
