@@ -30,4 +30,16 @@ print(False or False)
 print(True or True)
 
 #eg2
+print(10>2 or 34>12)
+print(10>20 or 34>102)
+print(10>201 or 34>12 or 50>34)
+print(80>100 or 20>102 or 45>200 )
 
+#eg3: special
+print(100 or 200)
+print(200 or 100)
+print(100 or 0)
+print(0 or 100)
+print(0 or 200 or 900)
+print("Java" or "Python")
+print("Java" or "Python" or " ")
