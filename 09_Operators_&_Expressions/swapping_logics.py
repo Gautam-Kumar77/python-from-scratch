@@ -37,6 +37,7 @@ a= a//b
 print("="*40)
 print("Value of a= {} \nValue of b= {} " .format(a,b))
 print("="*40)
+
 #Method 5
 a=2
 b=3
