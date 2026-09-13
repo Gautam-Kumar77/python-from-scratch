@@ -116,3 +116,8 @@ print(10 in lst)
 print("Guido" in lst)
 print(5 in lst[-2])
 # print(10 in lst[0])
+
+s= "Apple"
+
+print("aeiou" in s)
+print("a" in s or "e" in s or "i" in s or "o" in s or "u" in s)
