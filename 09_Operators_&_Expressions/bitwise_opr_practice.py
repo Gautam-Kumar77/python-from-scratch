@@ -97,3 +97,22 @@ print(s3)
 
 print({10,20,30}^{30,40,50})
 print({10,20}^{20,10})
+
+                        #identity Operator
+#Identity operator is only applicable on python command prompt
+
+                        #MemberShip Operator
+s="PYTHON"
+print("P" in s)
+print("Z" in s)
+
+print("Z" not in s)
+print("P" not in s)
+
+print("HON" in s)
+
+lst=[10, "Guido", 9+4j,[5,7], 67.6]
+print(10 in lst)
+print("Guido" in lst)
+print(5 in lst[-2])
+# print(10 in lst[0])
