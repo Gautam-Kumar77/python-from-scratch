@@ -1,4 +1,4 @@
-Ex:1 Write a program to find the greater of two numbers using the if..else operator.
+# Ex:1 Write a program to find the greater of two numbers using the if..else operator.
 a= float(input("Enter First Number: "))
 b= float(input("Enter Second Number: "))
 res= a if a>b else b if b>a else "Both values are equal."
@@ -17,10 +17,18 @@ print("{} is an {} Number".format(a,res1))
 
 #Ex:4 Write a program to check whether a number is positive or negative using the if..else operator.
 a= float(input("Enter a Number: "))
-res= "+ve" if a>0 else "-ve" if a<0 else "ZERO"
+res= "+ve" if a>0 else "-ve"
 print("{} is a {} number.".format(a,res))
-# Write a program to check whether a number is positive, negative, or zero using nested if..else operators.
+
+Write a program to check whether a number is positive, negative, or zero using nested if..else operators.
+a= float(input("Enter a Number: "))
+res= "+ve" if a>0 else "-ve" if a<0 else "ZERO"
+print(res)
+
 # Write a program to check whether a person is eligible to vote based on age using the if..else operator.
+age= int(input("Enter Your Age: "))
+res= "You are eligible to give vote" if (age>=18) and (age<=120) else "You are not eligible to give vote" if age<121 else "You are above 120 You must die now"
+print(res)
 # Write a program to determine whether a student has passed or failed based on marks using the if..else operator.
 # Write a program to calculate the grade of a student (A, B, C, or F) using nested if..else operators.
 # Write a program to find the largest of three numbers using nested if..else operators.
