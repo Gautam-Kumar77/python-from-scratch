@@ -26,5 +26,5 @@ print("Max({} {} {}) = {}".format(a,b,c,res))
 
 #program for accepting any Numerical Value and Decide Weather it is +VE or -VE or Zero
 n= float (input("Enter a number: "))
-res= "Positive" if n>0 else "Negative number"
+res= "Positive" if n>0 else "Negative number" if n<0 else "ZERO"
 print("{} is a {} Number".format(n,res))
