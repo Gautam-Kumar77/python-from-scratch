@@ -129,3 +129,19 @@ print(sw)
 print("Year: ", sw[2])
 
 #16 join()
+jn= ['Python', 'is', 'a', 'High', 'Level', 'Language']
+sp=" "
+sp= sp.join(jn)
+print(sp)
+
+#17 lstrip()
+s= "      Python"
+print(s.lstrip())
+
+#18 rstrip()
+s= "Python           "
+print(s.rstrip())
+
+#19 strip()
+s= "      Python        "
+print(s.strip())
