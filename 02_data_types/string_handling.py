@@ -162,3 +162,12 @@ print(s2.startswith("M"))
 s2= "Good Morning"
 print(s2.endswith("g"))
 print(s2.startswith("d"))
+
+#22 __contains__()
+st= "Good Morning , How are you?"
+print(st.__contains__("Morning"))
+print(st.__contains__("how"))
+
+#23 replace()
+st= "Good Morning , How are you?"
+print(st.replace("Morning", "Night"))
