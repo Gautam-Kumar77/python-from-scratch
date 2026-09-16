@@ -55,3 +55,17 @@ print(s.rindex("I"))
 #7 lower()
 s= "PYTHON"
 print(s.lower())
+
+#8 upper()
+s= "python"
+print(s.upper())
+
+#9 isupper()
+s= "PYTHON"
+print(s.isupper())
+
+s1= "PyTHon"
+print(s1.isupper())
+
+n= "123"
+print(n.isupper())
