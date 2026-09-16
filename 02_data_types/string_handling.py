@@ -86,9 +86,46 @@ print(s2.islower())
 #11 isalpha()
 s= "Hyderabad"
 print(s.isalpha())
-
 s="Hyderabad1243"
 print(s.isalpha())
-
 s= "Python is a programming lang"
 print(s.isalpha())
+
+#12 isdigit()
+n= "123"
+print(n.isdigit())
+n= "Pyth890"
+print(s.isdigit())
+
+#13 isalnum
+n1 = "23jyu"
+print(n.isalnum())
+strnum= "Py67.23"
+print(strnum.isalnum())
+
+s= "123"
+print(s.isalnum())
+s= "Hyderabad"
+print(s.isalnum())
+
+#14 isspace()
+s= "Python is a High Level Language"
+print(s.isspace())
+
+s= "      "
+print(s.isspace())
+
+
+#15 split()   split(delimeter)
+s= "Python is a High Level Language"
+sw= s.split()
+print(len(s))
+print(sw, type(sw))
+print(len(sw))
+
+s= "12/09/2000"
+sw= s.split("/")
+print(sw)
+print("Year: ", sw[2])
+
+#16 join()
