@@ -145,3 +145,20 @@ print(s.rstrip())
 #19 strip()
 s= "      Python        "
 print(s.strip())
+
+s= "Python is a programming language"
+ws= s.split()
+s1= " "
+s1= s1.join(ws)
+print(ws)
+print(s1)
+
+#20 startswith()
+s2= "Good Morning"
+print(s2.startswith("G"))
+print(s2.startswith("M"))
+
+#21 endswith()
+s2= "Good Morning"
+print(s2.endswith("g"))
+print(s2.startswith("d"))
