@@ -86,3 +86,9 @@ print(s2.islower())
 #11 isalpha()
 s= "Hyderabad"
 print(s.isalpha())
+
+s="Hyderabad1243"
+print(s.isalpha())
+
+s= "Python is a programming lang"
+print(s.isalpha())
