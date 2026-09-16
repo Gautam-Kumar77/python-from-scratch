@@ -69,3 +69,20 @@ print(s1.isupper())
 
 n= "123"
 print(n.isupper())
+
+#10 islower()
+s= "PYTHON"
+print(s.islower())
+
+s1= "PyTHon"
+print(s1.islower())
+
+n= "123"
+print(n.islower())
+
+s2= "python"
+print(s2.islower())
+
+#11 isalpha()
+s= "Hyderabad"
+print(s.isalpha())
