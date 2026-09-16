@@ -43,3 +43,15 @@ for i,v in enumerate(s1):
 s="MISSISSIPI"
 print(s.find("S"))
 print(s.find("I"))
+print(s.find("L"))
+
+print(s.index("M"))
+# print(s.index("L"))   ValueError: substring not found
+
+#If we want last occurence, then
+print(s.rfind("I"))
+print(s.rindex("I"))
+
+#7 lower()
+s= "PYTHON"
+print(s.lower())
