@@ -31,20 +31,45 @@
 # print(res)
 
 #Ex:7 Write a program to determine whether a student has passed or failed based on marks using the if..else operator.
-marks= float(input("Enter Your Makrs: "))
-res= "You are Passed" if (marks>=90) and (marks <=100) else "You are Failed"
-print(res)
+# marks= float(input("Enter Your Makrs: "))
+# res= "You are Passed" if (marks>=90) and (marks <=100) else "You are Failed"
+# print(res)
+#
+# #Ex:8 Write a program to calculate the grade of a student (A, B, C, or F) using nested if..else operators.
+# marks= float(input("Enter Your Makrs: "))
+# res= "Grade:A" if (marks>=90) and (marks <=100) else "Grade:B" if (marks<=89) and (marks>=70) else "Grade C" if marks<=69 and marks>=60 else "Grade F"
+# print(res)
 
-#Ex:8 Write a program to calculate the grade of a student (A, B, C, or F) using nested if..else operators.
-marks= float(input("Enter Your Makrs: "))
-res= "Grade:A" if (marks>=90) and (marks <=100) else "Grade:B" if (marks<=89) and (marks>=70) else "Grade C" if marks<=69 and marks>=60 else "Grade F"
-print(res)
+#Ex:9 Write a program to find the largest of three numbers using nested if..else operators.
+# a= float(input("Enter a number: "))
+# b= float(input("Enter a number: "))
+# c= float(input("Enter a number: "))
+# res= a if a>b and a>c else b if b>a and b>c else c
+# print("{} {} {} = {} is greatest number".format(a,b,c,res))
 
-# Write a program to find the largest of three numbers using nested if..else operators.
 # Write a program to find the absolute value of a number using the if..else operator.
-# Write a program to find the absolute difference between two numbers using the if..else operator.
+# n= float(input("Enter a number: "))
+# res= n if n>0 else n*-1
+# print(res)
+#
+# # Write a program to find the absolute difference between two numbers using the if..else operator.
+# a = float(input("Enter first number: "))
+# b = float(input("Enter second number: "))
+#
+# res = a - b if a > b else b - a
+# print("Absolute difference =", res)
+# print(res)
+
 # Write a program to check whether a given year is a leap year using the if..else operator.
+# year= int(input("Enter year"))
+# res= "Leap Year" if year%400==0 or year%4==0 and  not(year%100==0) else "Not Leap Year"
+# print(res)
+
 # Write a program to check whether a character is a vowel or a consonant using the if..else operator.
+ltr= input("Enter a character: ")
+res= "Vowel" if ltr.lower() in 'aeiou' else "Consonant"
+print(res)
+
 # Write a program to check whether a given character is an alphabet or not using the if..else operator.
 # Write a program to check whether a character is uppercase or lowercase using the if..else operator.
 # Write a program to check whether a number is divisible by 5 using the if..else operator.
