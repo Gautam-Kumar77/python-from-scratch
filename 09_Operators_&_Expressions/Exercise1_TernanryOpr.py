@@ -1,36 +1,45 @@
-# Ex:1 Write a program to find the greater of two numbers using the if..else operator.
-a= float(input("Enter First Number: "))
-b= float(input("Enter Second Number: "))
-res= a if a>b else b if b>a else "Both values are equal."
-print("Max({}, {})={}".format(a,b,res))
+# # Ex:1 Write a program to find the greater of two numbers using the if..else operator.
+# a= float(input("Enter First Number: "))
+# b= float(input("Enter Second Number: "))
+# res= a if a>b else b if b>a else "Both values are equal."
+# print("Max({}, {})={}".format(a,b,res))
+#
+# #Ex:2 Write a program to find the smaller of two numbers using the if..else operator.
+# a= float(input("Enter First Number: "))
+# b= float(input("Enter Second Number: "))
+# res= a if a<b else b if b<a else "Both values are equal"
+# print("Min({}, {})={}".format(a,b,res))
+#
+# #Ex:3 Write a program to check whether a number is even or odd using the if..else operator.
+# a= float(input("Enter a Number to check whether it is odd or even: "))
+# res1= "Even" if a%2==0 else "Odd"
+# print("{} is an {} Number".format(a,res1))
+#
+# #Ex:4 Write a program to check whether a number is positive or negative using the if..else operator.
+# a= float(input("Enter a Number: "))
+# res= "+ve" if a>0 else "-ve"
+# print("{} is a {} number.".format(a,res))
+#
+# #Ex:5 Write a program to check whether a number is positive, negative, or zero using nested if..else operators.
+# a= float(input("Enter a Number: "))
+# res= "+ve" if a>0 else "-ve" if a<0 else "ZERO"
+# print(res)
+#
+# #Ex:6 Write a program to check whether a person is eligible to vote based on age using the if..else operator.
+# age= int(input("Enter Your Age: "))
+# res= "You are eligible to give vote" if (age>=18) and (age<=120) else "You are not eligible to give vote" if age<121 else "You are above 120 You must die now"
+# print(res)
 
-#Ex:2 Write a program to find the smaller of two numbers using the if..else operator.
-a= float(input("Enter First Number: "))
-b= float(input("Enter Second Number: "))
-res= a if a<b else b if b<a else "Both values are equal"
-print("Min({}, {})={}".format(a,b,res))
-
-#Ex:3 Write a program to check whether a number is even or odd using the if..else operator.
-a= float(input("Enter a Number to check whether it is odd or even: "))
-res1= "Even" if a%2==0 else "Odd"
-print("{} is an {} Number".format(a,res1))
-
-#Ex:4 Write a program to check whether a number is positive or negative using the if..else operator.
-a= float(input("Enter a Number: "))
-res= "+ve" if a>0 else "-ve"
-print("{} is a {} number.".format(a,res))
-
-Write a program to check whether a number is positive, negative, or zero using nested if..else operators.
-a= float(input("Enter a Number: "))
-res= "+ve" if a>0 else "-ve" if a<0 else "ZERO"
+#Ex:7 Write a program to determine whether a student has passed or failed based on marks using the if..else operator.
+marks= float(input("Enter Your Makrs: "))
+res= "You are Passed" if (marks>=90) and (marks <=100) else "You are Failed"
 print(res)
 
-# Write a program to check whether a person is eligible to vote based on age using the if..else operator.
-age= int(input("Enter Your Age: "))
-res= "You are eligible to give vote" if (age>=18) and (age<=120) else "You are not eligible to give vote" if age<121 else "You are above 120 You must die now"
+#Ex:8 Write a program to calculate the grade of a student (A, B, C, or F) using nested if..else operators.
+marks= float(input("Enter Your Makrs: "))
+res= "Grade:A" if (marks>=90) and (marks <=100) else "Grade:B" if (marks<=89) and (marks>=70) else "Grade C" if marks<=69 and marks>=60 else "Grade F"
 print(res)
-# Write a program to determine whether a student has passed or failed based on marks using the if..else operator.
-# Write a program to calculate the grade of a student (A, B, C, or F) using nested if..else operators.
+
 # Write a program to find the largest of three numbers using nested if..else operators.
 # Write a program to find the absolute value of a number using the if..else operator.
 # Write a program to find the absolute difference between two numbers using the if..else operator.
