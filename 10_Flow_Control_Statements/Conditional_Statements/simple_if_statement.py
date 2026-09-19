@@ -34,20 +34,50 @@
 #     print("Number is Positive but {} is Odd Number.".format(num))
 
 #Ex5. Write a Python program to calculate Simple Interest using P, T, and R. Validate that all three values are greater than zero using simple if statements and display appropriate error messages for invalid values.
-p= float(input("Enter Principle: "))
-r= float(input("Enter rate: "))
-t= float(input("Enter time: "))
-si = (p*r*t)/100
-if p>0 and r>0 and t>0:
-    print("Principle:", p)
-    print("Rate:", r)
-    print("Time:", t)
-    print("Simple Interest:", si)
+# p= float(input("Enter Principle: "))
+# r= float(input("Enter rate: "))
+# t= float(input("Enter time: "))
+# si = (p*r*t)/100
+# if p>0 and r>0 and t>0:
+#     print("Principle:", p)
+#     print("Rate:", r)
+#     print("Time:", t)
+#     print("Simple Interest:", si)
+#
+# if p<=0:
+#     print("Invalid Principle")
+# if t<=0:
+#     print("Invalid time")
+# if r<=0:
+#     print("Invalid rate")
+# print("Program Execution Completed")
 
-if p<=0:
-    print("Invalid Principle")
-if t<=0:
-    print("Invalid time")
-if r<=0:
-    print("Invalid rate")
-print("Program Execution Completed")
+#Ex6. Program for accepting and display Its Name
+num= int(input("Enter a number: "))
+if num==0:
+    print("{} is Zero".format(num))
+if num==1:
+    print("{} is One".format(num))
+if num==2:
+    print("{} is Two".format(num))
+if num==3:
+    print("{} is Three".format(num))
+if num==4:
+    print("{} is Four".format(num))
+if num==5:
+    print("{} is Five".format(num))
+if num==6:
+    print("{} is Six".format(num))
+if num==7:
+    print("{} is Seven".format(num))
+if num==8:
+    print("{} is Eight".format(num))
+if num==5:
+    print("{} is Nine".format(num))
+if num>9:
+    print("It is Positive number")
+if num in range(-1,-10,-1):
+    print("It is Negative Digit")
+if num<0 and num not in range(-1,-10,-1):
+    print("It is negative number")
+
