@@ -47,12 +47,12 @@
 # res= a if a>b and a>c else b if b>a and b>c else c
 # print("{} {} {} = {} is greatest number".format(a,b,c,res))
 
-# Write a program to find the absolute value of a number using the if..else operator.
+#Ex:10 Write a program to find the absolute value of a number using the if..else operator.
 # n= float(input("Enter a number: "))
 # res= n if n>0 else n*-1
 # print(res)
 #
-# # Write a program to find the absolute difference between two numbers using the if..else operator.
+# #Ex:11 Write a program to find the absolute difference between two numbers using the if..else operator.
 # a = float(input("Enter first number: "))
 # b = float(input("Enter second number: "))
 #
@@ -60,23 +60,49 @@
 # print("Absolute difference =", res)
 # print(res)
 
-# Write a program to check whether a given year is a leap year using the if..else operator.
+#Ex:12 Write a program to check whether a given year is a leap year using the if..else operator.
 # year= int(input("Enter year"))
 # res= "Leap Year" if year%400==0 or year%4==0 and  not(year%100==0) else "Not Leap Year"
 # print(res)
 
-# Write a program to check whether a character is a vowel or a consonant using the if..else operator.
-ltr= input("Enter a character: ")
-res= "Vowel" if ltr.lower() in 'aeiou' else "Consonant"
-print(res)
+#Ex:13 Write a program to check whether a character is a vowel or a consonant using the if..elspecifically for se operator.
+# ltr= input("Enter a character: ")
+# res= "Vowel" if ltr.lower() in 'aeiou' else "Consonant"
+# print(res)
 
-# Write a program to check whether a given character is an alphabet or not using the if..else operator.
-# Write a program to check whether a character is uppercase or lowercase using the if..else operator.
-# Write a program to check whether a number is divisible by 5 using the if..else operator.
-# Write a program to check whether a number is divisible by both 3 and 5 using the if..else operator.
-# Write a program to determine whether a number is a single-digit number or a multi-digit number using the if..else operator.
-# Write a program to determine whether a person is eligible for a senior citizen discount using the if..else operator.
+#Ex:14 Write a program to check whether a given character is an alphabet or not using the if..else operator.
+# alp= input("Enter a character")
+# res= "It is Alphabet" if ("a" <= alp <= "z") or ("A" <= alp <= "Z") else "It is Not Alphabet"
+# print(res)
+
+#Ex:15 Write a program to check whether a character is uppercase or lowercase using the if..else operator.
+# alp= input("Enter a character: ")
+# res= "It is uppercase" if alp >= "A" and alp <="Z" else  "It is lowercase" if alp >= "a" and alp <="z" else "Invalid Input"
+# print(res)
+#
+# #Ex:16 Write a program to check whether a number is divisible by 5 using the if..else operator.
+# n= int(input("Enter a number: "))
+# res= "Divisible by 5" if n%5==0 else "Not Divisible by 5"
+# print("{} is {}".format(n, res))
+
+#Ex17: Write a program to check whether a number is divisible by both 3 and 5 using the if..else operator.
+# num= int(input("Enter a number:- "))
+# res= "Divisible by 3 and 5" if num%3==0 and num%5==0 else "not divisible by 3 and 5"
+# print("{} is {}".format(num,res))
+
+#Ex18: Write a program to determine whether a number is a single-digit number or a multi-digit number using the if..else operator.
+# num= int(input("Enter a number:- "))
+# res= "Single Digit Number" if (num<=9) and (num>=-9) else "Multi Digit Number"
+# print("{} is {} ".format(num,res))
+
+#Ex19: Write a program to determine whether a person is eligible for a senior citizen discount using the if..else operator.
+age= int(input("Enter Age:- "))
+res= "Eligible" if age>60 else "not eligible"
+print("{} is {}".format(age,res))
+
 # Write a program to determine whether a person is eligible for a driving license based on age using the if..else operator.
+
+
 # Write a program to determine whether a temperature indicates a hot day or a cool day using the if..else operator.
 # Write a program to determine whether a business transaction results in profit or loss using the if..else operator.
 # Write a program to find the maximum among two entered numbers using the if..else operator.
