@@ -101,15 +101,21 @@
 # print("{} is {}".format(age,res))
 
 # Write a program to determine whether a person is eligible for a driving license based on age using the if..else operator.
-age= int(input("Enter your age: "))
-res= "eligible for driving license" if age>=18 else "Not eligible for driving license"
-print("Your age is {} so you are {}".format(age, res))
+# age= int(input("Enter your age: "))
+# res= "eligible for driving license" if age>=18 else "Not eligible for driving license"
+# print("Your age is {} so you are {}".format(age, res))
+#
+# # Write a program to determine whether a temperature indicates a hot day or a cool day using the if..else operator.
+# temp= int(input("Enter Temperature: "))
+# res= "Hot day" if temp>=30 else "cool day"
+# print("Temperature is {} so it is {}".format(temp, res))
 
-# Write a program to determine whether a temperature indicates a hot day or a cool day using the if..else operator.
-temp= int(input("Enter Temperature: "))
-res= "Hot day" if temp>=30 else "cool day"
-print("Temperature is {} so it is {}".format(temp, res))
 # Write a program to determine whether a business transaction results in profit or loss using the if..else operator.
+cost= int(input("Enter Cost Price: "))
+selling= int(input("Enter Selling Price: "))
+res= "Profit" if selling>cost else "Loss" if cost>selling else "No profit and no loss"
+print(res)
+
 # Write a program to find the maximum among two entered numbers using the if..else operator.
 # Write a program to find the minimum among two entered numbers using the if..else operator.
 # Write a program to check whether a given number is a multiple of 10 using the if..else operator.
