@@ -29,6 +29,7 @@
 # age= int(input("Enter Your Age: "))
 # res= "You are eligible to give vote" if (age>=18) and (age<=120) else "You are not eligible to give vote" if age<121 else "You are above 120 You must die now"
 # print(res)
+from idlelib.rpc import response_queue
 
 #Ex:7 Write a program to determine whether a student has passed or failed based on marks using the if..else operator.
 # marks= float(input("Enter Your Makrs: "))
@@ -100,36 +101,51 @@
 # res= "Eligible" if age>60 else "not eligible"
 # print("{} is {}".format(age,res))
 
-# Write a program to determine whether a person is eligible for a driving license based on age using the if..else operator.
+# #Ex20: Write a program to determine whether a person is eligible for a driving license based on age using the if..else operator.
 # age= int(input("Enter your age: "))
 # res= "eligible for driving license" if age>=18 else "Not eligible for driving license"
 # print("Your age is {} so you are {}".format(age, res))
 #
-# # Write a program to determine whether a temperature indicates a hot day or a cool day using the if..else operator.
+# #Ex:21 Write a program to determine whether a temperature indicates a hot day or a cool day using the if..else operator.
 # temp= int(input("Enter Temperature: "))
 # res= "Hot day" if temp>=30 else "cool day"
 # print("Temperature is {} so it is {}".format(temp, res))
 
-# Write a program to determine whether a business transaction results in profit or loss using the if..else operator.
+# #Ex22: Write a program to determine whether a business transaction results in profit or loss using the if..else operator.
 # cost= int(input("Enter Cost Price: "))
 # selling= int(input("Enter Selling Price: "))
 # res= "Profit" if selling>cost else "Loss" if cost>selling else "No profit and no loss"
 # print(res)
 #
-# # Write a program to find the maximum among two entered numbers using the if..else operator.
+# #Ex23: Write a program to find the maximum among two entered numbers using the if..else operator.
 # num1= int(input("Enter first number: "))
 # num2= int(input("Enter second number: "))
 # res = num1 if num1>num2 else num2
 # print(res)
 
-# Write a program to find the minimum among two entered numbers using the if..else operator.
-num1= int(input("Enter first number: "))
-num2= int(input("Enter second number: "))
-res = num1 if num1<num2 else num2
-print(res)
-# Write a program to check whether a given number is a multiple of 10 using the if..else operator.
-# Write a program to check whether a given number is greater than 100 using the if..else operator.
+# #Ex24: Write a program to find the minimum among two entered numbers using the if..else operator.
+# num1= int(input("Enter first number: "))
+# num2= int(input("Enter second number: "))
+# res = num1 if num1<num2 else num2
+# print(res)
+
+# #Ex25: Write a program to check whether a given number is a multiple of 10 using the if..else operator.
+# num= int(input("Enter a number: "))
+# res= "Multiply of 10" if num%10==0 else "Not Multiply of 10"
+# print("{} is {}".format(num, res))
+#
+# #Ex26: Write a program to check whether a given number is greater than 100 using the if..else operator.
+# num1= int(input("Enter a number: "))
+# res= "Greater than 100" if num1>100 else "Not greater than 100"
+# print("{} is {}".format(num1, res))
+
+
 # Write a program to determine whether an entered salary qualifies for income tax based on a specified threshold using the if..else operator.
+amt= float(input("Enter a amount: "))
+res= "You have to pay taxes" if amt>120000 else "You dont have to pay taxes"
+print("{} is So {}".format(amt,res))
+
 # Write a program to determine whether a person can enter a movie theater based on the age restriction using the if..else operator.
+
 # Write a program to determine whether a student is eligible for a scholarship based on marks using the if..else operator.
 # Write a program to compare two strings and display whether they are equal or not using the if..else operator.
