@@ -84,7 +84,7 @@
 # else:
 #     i=1
 #     while i<=n:
-#         print(i , "^", i, "=", i**i)
+#         print(i , "^", i, "=", i**2)
 #         i= i+1
 #     else:
 #         print("Square of every number executed Successfully!")
@@ -97,15 +97,15 @@
 # 2
 # 1
 # But do not modify n. Use another variable as the counter.
-num=int(input("Enter a number: "))
-if num<=0:
-    print("Invalid Input!")
-else:
-    t=num
-    while(1<=t):
-        print(t)
-        t= t-1
-    print("Executed Successfully")
+# num=int(input("Enter a number: "))
+# if num<=0:
+#     print("Invalid Input!")
+# else:
+#     t=num
+#     while(1<=t):
+#         print(t)
+#         t= t-1
+#     print("Executed Successfully")
 
 #9 Accept a number n and print:
 
@@ -116,15 +116,23 @@ else:
 # 5 * 5 = 25
 # for input 5.
 
+# num=int(input("Enter a number: "))
+# if num<=0:
+#     print("Invalid Input!")
+# else:
+#     i= 1
+#     while i<=num:
+#         print(i, "*", num, "=", i*num)
+#         i= i+1
+#     else:
+#         print("Executed Successfully!")
+
+#10. Accept a number n and print the numbers from n to 1, along with their squares.
 num=int(input("Enter a number: "))
 if num<=0:
     print("Invalid Input!")
 else:
-    i= 1
-    while i<=num:
-        print(i, "*", num, "=", i*num)
-        i= i+1
-    else:
-        print("Executed Successfully!")
-
-#10. Accept a number n and print the numbers from n to 1, along with their squares.
+    t=num
+    while t>=1:
+        print(t, '->', t**2)
+        t= t-1
