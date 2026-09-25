@@ -59,11 +59,31 @@
 #     print()
 
 #Ex:7 Program for Cal Product  of N Natural Nums
-n= int(input("Enter a number: "))
+# n= int(input("Enter a number: "))
+# if n<=0:
+#     print("Invalid Input: ")
+# else:
+#     pd= 1
+#     for i in range(1, n+1):
+#         pd= pd*i
+#     print(pd)
+
+#Ex:8 Program for Accepting List of Values from Key Board and Find their sum and average
+n= int(input("Enter a number to store values"))
 if n<=0:
-    print("Invalid Input: ")
+    print("Invalid Input!")
 else:
-    pd= 1
+    total= 0
+    lst= list()
+    avg= 0
     for i in range(1, n+1):
-        pd= pd*i
-    print(pd)
+        val= float(input("Enter value {}:- ".format(i)))
+        total= total+val
+        avg= total/n
+        lst.append(val)
+    print("Values are here: ")
+    print(lst)
+    print("Sum is: ", total)
+    print("Average is:{}".format(avg))
+
+#Ex:9
