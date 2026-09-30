@@ -28,3 +28,8 @@ s= int(input("Enter a number:"))
 s1= int(input("Enter a number:"))
 print("({}, {}): {}".format(s,s1,add(s,s1)))
 
+#ApproachEx2.py
+#Function Def for Adding Two Numbers
+# INPUT         : Input Taking Inside of Function Body
+# PROCESS       : Processing Done in Function Body
+# OUTPUT        : Output Displayed in Function Body
