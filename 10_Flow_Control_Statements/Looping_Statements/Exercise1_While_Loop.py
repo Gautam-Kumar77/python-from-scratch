@@ -128,11 +128,72 @@
 #         print("Executed Successfully!")
 
 #10. Accept a number n and print the numbers from n to 1, along with their squares.
-num=int(input("Enter a number: "))
-if num<=0:
-    print("Invalid Input!")
-else:
-    t=num
-    while t>=1:
-        print(t, '->', t**2)
-        t= t-1
+# num=int(input("Enter a number: "))
+# if num<=0:
+#     print("Invalid Input!")
+# else:
+#     t=num
+#     while t>=1:
+#         print(t, '->', t**2)
+#         t= t-1
+
+                                    #Challenge
+#11. Accept a number n and print the sum of numbers from 1 to n.
+n= int(input("Enter a number to sum of numbers: "))
+i=1
+sum= 0
+while i<=n:
+    sum= sum+i
+    i= i+1
+print(sum)
+
+print(""" 12. Accept a number n and count how many numbers between 1 and n are divisible by 3.
+Example:
+Input: 10
+Output: 3
+Because:
+3, 6, 9
+
+13. Accept a number n and print its digits one by one from right to left.
+Example:
+Input: 12345
+
+5
+4
+3
+2
+1
+
+14. Accept a number n and reverse it.
+
+Example:
+
+Input: 12345
+Output: 54321
+
+This one is important because the variable you process and the variable you print may be different.
+
+15. 🔥 Challenge
+
+Accept a number n and print this pattern:
+
+For:
+
+n = 5
+
+output:
+
+1
+12
+123
+1234
+12345
+
+Here you need to think about two variables:
+
+one controls the rows
+one controls the numbers printed in each row
+        """)
+
+#Ex12. Accept a number n and count how many numbers between 1 and n are divisible by 3.
+n= int(input("Enter a number:"))
