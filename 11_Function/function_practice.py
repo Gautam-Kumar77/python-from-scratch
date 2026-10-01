@@ -1,41 +1,71 @@
-# #Ex1: Functions for Cal simple Interest
-def simpInt():
-    p= int(input("Enter Principle: "))
-    t= int(input("Enter Time: "))
-    r= int(input("Enter rate: "))
-    return p,t,r
+def greet(name):
+    print("Good Morning! \n\t\t {}".format(name))
 
-def calculate(p,t,r):
-    si= (p*r*t)/100
-    totalamt= si+p
-    return si, totalamt
+#main Program
+print("Type of Greet: ", type(greet))
+greet("Gautam")
 
-def disp(si,totalamt):
-    print("Simple Interest: ", si)
-    print("Total Amount: ", totalamt)
+#Approach 1
+#Function Def for Adding Two Numbers
+# INPUT         : Input Taking From Function Call
+# PROCESS       : Processing Done in Function Body
+# OUTPUT        : Output Returned to Function Call
 
-#Main Program
-a,b,c= simpInt()
-si, totalamt= calculate(a,b,c)
-disp(si,totalamt)
+def addtwo(a,b):
+    c= a+b
+    return c
+
+r= addtwo(3,6)
+print("Sum:= ", r)
+t= addtwo(67,54)
+print("Sum: ", t)
+
+# #Ex2: program from adding the number take the input from user
+def add(a,b):
+    c= a+b
+    return c
+s= int(input("Enter a number:"))
+s1= int(input("Enter a number:"))
+print("({}, {}): {}".format(s,s1,add(s,s1)))
+
+#Approach 2
+# INPUT         : Input Taking Inside of Function Body
+# PROCESS       : Processing Done in Function Body
+# OUTPUT        : Output Displayed in Function Body
+
+#Function Def for Adding Two Numbers
+def sub():
+    a= int(input("Enter a number: "))
+    b= int(input("Enter 2nd number: "))
+    c= a-b
+    print("Subtraction is: ",c)
+sub()
 
 
-#Ex2: Functions for Cal simple Interest
-def simpint():
-    P = int(input("Enter Principle: "))
-    T = int(input("Enter Time: "))
-    R = int(input("Enter rate: "))
-    return P,T,R
+#Approach 3
+# INPUT         : Input Taking From Function Call
+# PROCESS       : Processing Done in Function Body
+# OUTPUT        : Output Displayed in Function Body
+#Function Def for Adding Two Numbers
+def addtwo(a,b):
+    c=a+b
+    print( "({} + {}) = {}".format(a,b,c))
 
-def calSimp():
-    P,R,T= simpint()
-    si= (P*R*T)/100
-    totalamt= P+si
-    return P,R,T,si,totalamt
+a=int(input("Enter first Number: "))
+b=int(input("Enter second number: "))
+addtwo(a,b)
 
-def dispSimp():
-    P,R,T,si,totalamt= calSimp()
-    print("Simple Interest: ", si)
-    print("Total Amount: ", totalamt)
 
-dispSimp()
+#Approach 4
+# INPUT         : Input Taking Inside of Function Body
+# PROCESS       : Processing Done in Function Body
+# OUTPUT        : Output Returned to Function Call
+
+# Function Def for Adding Two Numbers
+def sumop():
+    a= int(input("Enter a number: "))
+    b= int(input("Enter second number: "))
+    c= a+b
+    return a,b,c
+x,y,z= sumop()
+print("sum({},{})= {}".format(x,y,z))
