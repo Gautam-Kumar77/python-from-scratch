@@ -1,4 +1,4 @@
-# #Ex1: Functions for Cal simple Interest
+#Ex1: Functions for Cal simple Interest
 def simpInt():
     p= int(input("Enter Principle: "))
     t= int(input("Enter Time: "))
@@ -39,3 +39,19 @@ def dispSimp():
     print("Total Amount: ", totalamt)
 
 dispSimp()
+
+#Functions for Finding Length of words in a Line fo Text
+s= input("Enter a sentence: ")
+s1= s.split()
+for i in s1:
+    print( "{} : {}".format(i, len(i)))
+
+#Using Function
+def leng():
+    return input("Enter a string: ")
+def calc():
+    lengt= leng()
+    l= lengt.split()
+    for i in l:
+        print("{}:{}".format(i, len(i)))
+calc()
