@@ -55,3 +55,13 @@ def calc():
     for i in l:
         print("{}:{}".format(i, len(i)))
 calc()
+
+#Functions for Generating Mul Table
+def mul():
+    n= int(input("Enter a number to print table: "))
+    return  n
+def calc():
+    cal= mul()
+    for i in range(1,11):
+        print("{} * {} : {}".format(cal,i,cal*i))
+calc()
