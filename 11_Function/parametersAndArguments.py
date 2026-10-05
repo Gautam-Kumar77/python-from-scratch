@@ -64,3 +64,4 @@ def varlen(sno,name,marks,*vals):
     print("-"*50)
 varlen(12,"Sanchit", 90, 10,20,30,40)
 varlen(3, "Rajesh", 89, 20,40, 60)
+varlen(12, "Ramesh", 4, 67,57,65)
