@@ -1,4 +1,4 @@
-#Positional Argument
+#1. Positional Argument
 def disstddata(name, roll, course):
     print("\t{} \t{} \t{}".format(name,roll,course))
 
@@ -18,7 +18,7 @@ stdtl("Sarvan", 897634587, "Muzaffarpur")
 stdtl(address="Sheohar", name="Ramesh", phone=6787908765)
 # stdtl(phone=892839289, name="Shyam", "Patna") SyntaxError: positional argument follows keyword argument
 
-#Keyword arguments
+#2. Keyword arguments
 def keyarg(a,b,c,d):
     print("\t{} \t{} \t{} \t{}".format(a,b,c,d))
 keyarg(a=23,b=45,c=43,d=34)
@@ -26,8 +26,7 @@ keyarg(12, b=45,c=89,d= 34)
 keyarg(100, c=90, d=97, b=89)
 # keyarg(91, c=89, d= 90)   TypeError: keyarg() missing 1 required positional argument: 'b'
 
-
-#Default arguments
+#3. Default arguments
 def dfltarg(name,course, city="HYD", country= "India"):
     print("{}\t {}\t {}\t  {}\t ".format(name, course, city, country))
 dfltarg('A', "MBA")
@@ -35,7 +34,7 @@ dfltarg('A', "MBA", city="Delhi")
 dfltarg(country="Algeria", name="Rahul", city="BNG", course="LLB")
 
 
-#Variable length argument
+#4. Variable length argument
 #Program for Demonstrating the Concept of Variable Length Arguments
 def valeng(*arg):
     print(arg, type(arg), len(arg))
@@ -65,3 +64,17 @@ def varlen(sno,name,marks,*vals):
 varlen(12,"Sanchit", 90, 10,20,30,40)
 varlen(3, "Rajesh", 89, 20,40, 60)
 varlen(12, "Ramesh", 4, 67,57,65)
+
+#5. Pure KeyWord Variables Length Parameters (or) arguments
+#Program for Demonstrating the Need of  Keyword Variable Length Arguments
+
+def disp( **kvr):
+    print(kvr,type(kvr),len(kvr))
+
+#Main Program
+disp(sno=10,sname="RS",mm=56,em=70,cname="PSF") # Function Call-1 with 5 Keyword  Variable length Arguments
+disp(tno=100,tname="TR",sub1="PYTHON",sub2="Numpy")# Function Call-2 with 4 Keyword Variable length  Arguments
+disp(cid=1000,cname="JH",hb="Drawing") # Function Call-3 with 3 Keyword  Variable length Arguments
+disp(a=10,b=20) # Function Call-4 with 2 Keyword Variable length  Arguments
+disp(k=30) # Function Call-5 with 1 Keyword Variable length  Arguments
+disp() # Function Call-6 with 0 Keyword Variable length Arguments"""
