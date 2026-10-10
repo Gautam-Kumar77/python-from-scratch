@@ -21,3 +21,19 @@ print("Odd numbers:", od)
 print("Enter List of Numerical Values Separated by Comma:")
 lst= [float(val) for val in input().split(",")]
 print("List of values: ", lst)
+
+#Ex.5 program for Reading the values from Key Board By using List Comprehension
+lst= [val for val in input("Enter values for storing value in list ").split(",")]
+print(lst)
+
+#Ex.6 Program for Reading List of Words whose Length Ranges Between 3 and 4 (Inclusive)
+print("Enter words seperated by comma: ")
+lst3= [words for words in input().split(",") if len(words) in range(3,5)]
+print("List of words:", lst3)
+
+#Ex.7 Program for Getting all Even Numbers By using List Comprehension
+lst0= [3,23,43,55,65,34,90,76,87,65,100]
+ev= (val for val in lst0 if val%2==0)
+print("Even Numbers: ", ev, type(ev))
+d= list(ev)
+print("Even Numbers: ",d, type(d))
