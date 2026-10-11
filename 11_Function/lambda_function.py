@@ -18,3 +18,11 @@ a= float(input("Enter First Number: "))
 b= float(input("Enter Second number: "))
 res= num(a,b)
 print("Max({},{})= {}".format(a,b,res))
+
+#Ex4. Program for accepting List of Numerical Values and find max
+findmax= lambda val: max(val)
+
+print("Enter list of values seperated by comma:- ")
+vals=[val for val in input().split(",") ]
+maxv= findmax(vals)
+print("Maximum Values ",maxv)
