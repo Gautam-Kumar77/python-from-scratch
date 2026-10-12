@@ -58,4 +58,34 @@ res= list(map(hike, oldsalary))
 for i,j in zip(oldsalary, res):
     print(i, "\t", j)
 
-#Ex.2 #program for accepting List of Salaries of Employees and Give 50 % Hike to Every Employee
+# Ex.2 program for accepting List of Salaries of Employees and Give 50 % Hike to Every Employee
+def hike(sal):
+    sal= sal*50/100
+    return sal
+print("Enter List of Salaries separated by Comma:")
+obj= [val for val in input().split(",")]
+newsal= list(map(hike, obj))
+
+for i,j in zip(obj, newsal):
+    print(i,"\t", j)
+
+# Ex.3 Program for accepting List of Words and Find their Length
+print("Enter list of words seperated by comma: ")
+val= [val1 for val1 in input().split(",")]
+opr= list(map(lambda p: len(p), val))
+print(opr)
+print("---------------------------------------------")
+print("\tWord\t\tLength")
+print("---------------------------------------------")
+for j, k in zip(val, opr):
+    print("\t{}\t\t{}".format(j,k))
+
+#Ex.4 Program for adding Two List Object Content
+def add(a,b):
+    return a+b
+lst1= [2,4,6,8,24,98]
+lst2= [90,45,67]
+lstop= list(map(add, lst1, lst2))
+for x,y,z in zip(lst1,lst2,lstop):
+    print(x,y,z)
+
