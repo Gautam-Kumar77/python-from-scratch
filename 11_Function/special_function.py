@@ -79,6 +79,7 @@ print("\tWord\t\tLength")
 print("---------------------------------------------")
 for j, k in zip(val, opr):
     print("\t{}\t\t{}".format(j,k))
+print("---------------------------------------------")
 
 #Ex.4 Program for adding Two List Object Content
 def add(a,b):
