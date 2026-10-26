@@ -1,5 +1,7 @@
 from module_for_UserDefinedException import InvalidAgeError
 from module_for_UserDefinedException import NumberDevisionError
+from module_for_UserDefinedException import ZeroError , NegativeNumberError
+from builtins import ValueError
 
 #Ex1
 try:
@@ -28,3 +30,21 @@ except ValueError:
     print("Dont enter alnum, string and symbol")
 else:
     print("Division is: {}".format(c))
+
+#Ex3:
+
+def table(n):
+    if n==0:
+        raise ZeroError
+    elif n<0:
+        raise NegativeNumberError
+    else:
+         for i in range(1,11):
+             print(n, "*", i ,"=", n*i)
+try:
+    n= int(input("Enter a number for printing table:- "))
+    table(n)
+except ZeroError:
+    print("Dont Enter Zero for mul table")
+except ValueError:
+    print("Please Dont enter string, alpnum and symbol")
