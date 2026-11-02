@@ -31,3 +31,15 @@ def dispfile():
         print("File does not exist")
 
 dispfile()
+
+#Ex:4 Program for Copying an Image File into another Image File
+def filecopy():
+    try:
+        with open("D:\\Photos\\mountain.jpg" , "rb") as fi:
+            with open("mountain1.jpg", "wb" ) as fi1:
+                srcfiledata= fi.read()
+                fi1.write(srcfiledata)
+                print("Image file copied successfully")
+    except FileNotFoundError:
+        print("Source file doesnt exist")
+filecopy()
